@@ -1,1 +1,17 @@
 <h1>Lista filmów</h1>
+
+<div *ngFor="let film of FilmsArray" class="uk-card uk-card-default uk-width-1-2">
+
+
+  <div class="uk-card-header">
+    <h3 class="uk-card-title">{{film.title}}</h3>
+  </div>
+
+  <div class="uk-card-body">
+    <p>Rezyser: {{film.author}}</p>
+    <p>Rok produkcji: {{film.rokProdukcji}}</p>
+    <p>Ocena: {{film.ocenaFilmu}}</p>
+  </div>
+
+</div>
+

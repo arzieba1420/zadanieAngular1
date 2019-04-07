@@ -1,1 +1,19 @@
 <h1>Lista książek</h1>
+
+<div *ngFor="let book of BooksArray" class="uk-card uk-card-default uk-width-1-2">
+
+
+  <div class="uk-card-header">
+    <h3 class="uk-card-title">{{book.title}}</h3>
+  </div>
+
+  <div class="uk-card-body">
+    <p>Autor: {{book.autor}}</p>
+    <p>Rok wydania: {{book.rokWydania}}</p>
+    <p>Liczba stron: {{book.liczbaStron}}</p>
+    <p>Cena: {{book.cenaKsiazki}}</p>
+  </div>
+
+</div>
+
+<span class="uk-badge">Test span</span>
